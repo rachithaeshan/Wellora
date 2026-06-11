@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widgetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/widget_background">
+
+    <!-- Widget Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WellTrack"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#1976D2"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Percentage Display -->
+    <TextView
+        android:id="@+id/widgetPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="#1976D2"
+        android:layout_gravity="center" />
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/widgetProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:progress="0"
+        android:max="100"
+        android:progressTint="#1976D2"
+        android:progressBackgroundTint="#E0E0E0"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Progress Text -->
+    <TextView
+        android:id="@+id/widgetProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0_of_0_completed"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_gravity="center" />
+
+    <!-- Today's Date -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/today_s_habits"
+        android:textSize="10sp"
+        android:textColor="#999999"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

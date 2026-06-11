@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Habit Name"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/habitNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g., Drink 8 glasses of water"
+        android:background="@drawable/input_background"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emoji (optional)"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/emojiInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="💧"
+        android:background="@drawable/input_background"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:maxLength="2" />
+</LinearLayout>
